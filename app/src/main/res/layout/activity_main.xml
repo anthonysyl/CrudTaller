@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/gradientbackground"
+
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="261dp"
+        android:layout_height="257dp"
+        android:layout_marginBottom="10dp"
+        android:scaleX="1"
+        android:scaleY="1"
+        app:srcCompat="@drawable/totoro" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/amatica_sc"
+        android:text="CRUD POR:"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/amatica_sc"
+        android:text="Antony Carrascal Quintero"
+        android:textSize="25sp"
+        android:layout_marginBottom="5dp"/>
+
+    <EditText
+        android:id="@+id/edit_fname"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/editextsombra"
+        android:hint="Nombre Completo"
+        android:textAlignment="center"
+        android:drawableLeft="@drawable/ic_baseline_attribution_24"
+        android:drawablePadding="10dp"
+        android:paddingLeft="10dp"
+        />
+
+    <EditText
+        android:id="@+id/edit_lname"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/editextsombra"
+        android:hint="Usuario"
+        android:textAlignment="center"
+        android:drawableLeft="@drawable/account"
+        android:drawablePadding="10dp"
+        android:paddingLeft="10dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Enviar"
+            android:id="@+id/submit_btn"
+            android:background="@drawable/roundedbutton"
+            android:textColor="@color/white"
+            android:elevation="4dp"
+            android:layout_marginBottom="10dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Usuarios"
+            android:id="@+id/display_btn"
+            android:background="@drawable/roundedbutton"
+            android:textColor="@color/white"
+            android:elevation="4dp"
+            android:layout_marginBottom="10dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Editar"
+            android:id="@+id/edit_btn"
+            android:visibility="gone"
+            android:textColor="@color/white"
+            android:background="@drawable/roundedbutton"/>
+    </LinearLayout>
+
+</LinearLayout>
